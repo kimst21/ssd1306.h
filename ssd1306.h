@@ -1,25 +1,3 @@
-/**
- * original author:  Tilen Majerle<tilen@majerle.eu>
- * modification for STM32f10x: Alexander Lutsai<s.lyra@ya.ru>
-
-   ----------------------------------------------------------------------
-    Copyright (C) Alexander Lutsai, 2016
-    Copyright (C) Tilen Majerle, 2015
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-   ----------------------------------------------------------------------
- */
 #ifndef SSD1306_H
 #define SSD1306_H 100
 
@@ -73,8 +51,8 @@ SDA        |PB7          |Serial data line
  * @brief  SSD1306 color enumeration
  */
 typedef enum {
-  SSD1306_COLOR_BLACK = 0x00, /*!< Black color, no pixel */
-  SSD1306_COLOR_WHITE = 0x01  /*!< Pixel is set. Color depends on LCD */
+	SSD1306_COLOR_BLACK = 0x00, /*!< Black color, no pixel */
+	SSD1306_COLOR_WHITE = 0x01  /*!< Pixel is set. Color depends on LCD */
 } SSD1306_COLOR_t;
 
 
@@ -225,7 +203,7 @@ void SSD1306_DrawFilledCircle(int16_t x0, int16_t y0, int16_t r, SSD1306_COLOR_t
 
 
 #ifndef ssd1306_I2C_TIMEOUT
-#define ssd1306_I2C_TIMEOUT         20000
+#define ssd1306_I2C_TIMEOUT					20000
 #endif
 
 /**
